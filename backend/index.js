@@ -17,6 +17,13 @@ app.use((req, res, next) => {
   res.setHeader('Referrer-Policy', 'no-referrer-when-downgrade');
   next();
 });
+app.use(cors(
+  {
+    origin:["https://car-dealership-o1kd.vercel.app/"],
+    methods:["POST","GET"],
+    Credential:true
+  }
+))
 
 
 (async () => {
