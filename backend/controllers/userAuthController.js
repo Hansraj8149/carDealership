@@ -23,8 +23,8 @@ const userAuthController = {
         return res.status(401).json({ error: 'Invalid credentials' });
       }
 
-      const token = jwt.sign({ user_id: user.user_id }, process.env.JWT_SECRET, {
-        expiresIn: '1h', // Set the expiration time as needed
+      const token = jwt.sign({ user_id: user.user_id },"MY_JWT_SECRET", {
+        expiresIn: '1h', 
       });
 
       res.json({ token });

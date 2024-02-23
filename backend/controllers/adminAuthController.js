@@ -22,7 +22,7 @@ const adminAuthController = {
         return res.status(401).json({ error: 'Invalid credentials' });
       }
 
-      const token = jwt.sign({ admin_id: admin.admin_id }, process.env.JWT_SECRET, {
+      const token = jwt.sign({ admin_id: admin.admin_id },"MY_JWT_SECRET", {
         expiresIn: '1h', 
       });
 

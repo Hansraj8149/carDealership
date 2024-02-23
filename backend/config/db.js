@@ -4,7 +4,7 @@ const { MongoClient } = require('mongodb');
 const faker = require('faker');
 require('dotenv').config();
 
-const DATABASE_URL = process.env.MONGODB_URL;
+const DATABASE_URL = "mongodb+srv://hansraj:Hansraj8149@cluster0.tinlwjt.mongodb.net/carDealership";
 
 async function createDatabase() {
   const client = new MongoClient(DATABASE_URL, { useNewUrlParser: true, useUnifiedTopology: true });
