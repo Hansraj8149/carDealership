@@ -28,7 +28,7 @@ NerveSparks aims to streamline the management of cars and deals within dealershi
 
 To run the project locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/yourusername/nerve-sparks.git`
+1. Clone the repository: `[git clone https://github.com/yourusername/nerve-sparks.git](https://github.com/Hansraj8149/carDealership.git)`
 2. Navigate to the frontend folder: `cd frontend`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm run dev`
